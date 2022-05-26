@@ -1,10 +1,3 @@
-import { nextTick } from "process";
-import { nextTick } from "process";
-import { nextTick } from "process";
-import { nextTick } from "process";
-import { fromBits } from "long";
-import { nextTick } from "process";
-import { userInfo } from "os";
 import { createRouter, createWebHistory } from "vue-router";
 import routes from "./routes";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
