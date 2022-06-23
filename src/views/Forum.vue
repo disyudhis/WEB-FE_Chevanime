@@ -41,7 +41,7 @@
 
       <div v-if="forums.length > 0">
         <div class="flex flex-col space-y-3">
-          <div v-for="forum in forums" :key="forum.id" class="card rounded-md p-5 shadow-xl bg-white hover:cursor-pointer">
+          <div v-for="forum in forums" :key="forum.id" @click="$router.push({ path: `/forum/${forum.id}` })" class="card rounded-md p-5 shadow-xl bg-white hover:cursor-pointer">
             <h1 class="text-xl font-semibold">{{ forum.data.title }}</h1>
             <h2 class="text-lg font-thin">Author: {{ forum.data.author }}</h2>
             <p class="truncate">{{ forum.data.content }}</p>
